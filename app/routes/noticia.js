@@ -9,6 +9,7 @@ module.exports = function (application) {
 	});
 
 	application.get('/noticia/show/:noticia_id', function(req, res){
+		res.render('noticia/show', req.params);
 		
 	});	
 
